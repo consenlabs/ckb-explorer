@@ -17,7 +17,7 @@ namespace :migration do
 	  addresses.each do |address|
 		  s = address.lock_script
 		  lock = CKB::Types::Script.new(s.to_node_lock)
-		  short_acp_address = CKB::Address.new(lock, mode).generate
+		  short_acp_address = CKB::Address.new(lock, mode: mode).generate
 		  puts "full address: #{address.address_hash}, short acp address: #{short_acp_address}"
 		  address.update(address_hash: short_acp_address)
 
