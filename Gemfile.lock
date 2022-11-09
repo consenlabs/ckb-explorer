@@ -229,7 +229,7 @@ GEM
       nio4r (~> 2.0)
     raabro (1.1.6)
     racc (1.5.2)
-    rack (2.2.3)
+    rack (2.2.4)
     rack-attack (6.2.1)
       rack (>= 1.0, < 3)
     rack-cors (1.0.5)
